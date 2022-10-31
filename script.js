@@ -14,17 +14,17 @@ btn.addEventListener('click',()=>{
      last=s.length-1;
     
      while(first<=last){
-        if(s[first]!==s[last]){
-            console.log("not a palindrome");
+        if(s[first]!=s[last]){
+            alert("not a palindrome");
             indentify=0;
-            input.value=" ";
+            input.value='';
             break;
         }
         first++;
         last--;
     }
     if(indentify===1){
-        console.log("its a palindrome");
+        alert("its a palindrome");
         input.value=" ";
     }
 })
